@@ -1,0 +1,177 @@
+/* 
+* BOOK A TRIP SECTION
+*/
+
+.trip {
+    display: flex;
+    text-align: center;
+
+    @include md {
+        flex-direction: column;
+    }
+}
+
+.trip__description{
+    display: flex;
+}
+
+.trip__content {
+    max-width: 500px;
+}
+
+.trip__sub-title {
+    font-family: $poppins;
+    font-weight: $fw-sm;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+
+    @include md {
+        text-align: center;
+    }
+}
+
+.trip__title {
+    font-family: $volkhov;
+    font-weight: $fw-m;
+    font-size: 50px;
+    line-height: 64px;
+    color: $title;
+    text-align: left;
+    color: $title;
+
+    @include md {
+        font-size: 30px;
+        text-align: center;
+        line-height: 32px;
+    }
+}
+
+.trip__value {
+    display: flex;
+    text-align: left;
+    font-family: $poppins;
+}
+
+.trip__value-list {
+    padding: 40px 0;
+}
+
+.trip__value-icon {
+    height: 10%;
+    margin: 0 10px;
+}
+
+.trip__value-content {
+    h6 {
+        font-weight: $fw-m;
+        font-size: 16px;
+
+        @include md {
+            text-align: left;
+        }
+    }
+
+    p {
+        font-weight: $fw-xs;
+        font-size: 16px;
+        max-width: 500px;
+
+        @include md {
+            text-align: left;
+        }
+    }
+}
+
+.place__cards {
+    margin: 100px 0 0 100px; 
+    padding: 100px 0 0 100px; 
+
+    @include md{
+        display: contents;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+.place__card-up {
+    position: absolute !important;
+    width: fit-content;
+    border-radius: 25px !important;
+    box-shadow: 114px -22px 170px -46px $card-shadow;
+
+    @include md{
+        position: unset !important;
+        width: 70% !important;
+        margin-left: 50px;
+    }
+}
+
+.place__card-up--image {
+    padding: $space-xs;
+}
+
+.place__card-title {
+    color: $black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.place__card-last-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: $space-xs;
+}
+
+.place__heart-icon {
+    color: $violet;
+}
+
+.place__card-low {
+    width: fit-content;
+    display: flex !important;
+    flex-direction: row !important;
+    top: 50% !important;
+    left: 40% !important;
+    box-shadow: 17px 20px 15px -15px;
+    border-radius: 25px !important;
+}
+
+.place__card-low--body {
+    white-space: nowrap;
+    text-align: left;
+    line-height: 0.3px;
+    font-family: $poppins;
+
+    @include md{
+        padding: $space-xxs !important;
+    }
+}
+
+.place__card-low--text{
+    font-size: 12px;
+}
+
+.place__card-body {
+    text-align: left;
+    padding: $space-xxs;
+    box-shadow: -7px 20px 11px -14px $box-shadow;
+}
+
+.place__card-low--image {
+    height: 10%;
+    margin: $space-xxs;
+
+    @include md{
+        height: fit-content !important;
+    }
+}
+
+.place__card-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.place__progress{
+    color: $violet !important;
+}

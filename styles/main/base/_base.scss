@@ -1,0 +1,6 @@
+*{
+    color: $text;
+    @include md{
+        text-align: center;
+    }
+}

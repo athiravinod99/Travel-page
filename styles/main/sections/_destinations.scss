@@ -1,0 +1,87 @@
+/* 
+* DESTINATION SECTION
+*/
+
+.destination {
+    position: relative;
+}
+
+.destinations__title {
+    font-family: $volkhov;
+    font-weight: $fw-m;
+    font-size: 50px;
+    line-height: 64px;
+    color: $title;
+    margin-bottom: $space-m;
+
+    @include md {
+        font-size: 30px;
+        margin: 0 !important;
+    }
+}
+
+.destinations__sub-title {
+    font-family: $poppins;
+    font-weight: $fw-sm;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 10px 0px;
+}
+
+.destinations__card-list {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.destination__card {
+    width: auto !important;
+    padding: 0 !important;
+    border-radius: $space-s !important;
+    box-shadow: 0px 15px 10px -15px $box-shadow;
+
+    @media only screen and (max-width: 780px) {
+        margin: $space-m !important;
+        height: 500px;
+        width: 60% !important;
+    }
+}
+
+.destination__card-image--overlay {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: end;
+}
+
+.destination__card-description {
+    background: $white;
+    text-align: left;
+    padding: 10px 25px;
+    font-family: $poppins;
+    font-weight: $fw-s;
+    font-size: 18px;
+
+    @include md{
+        font-size: 12px;
+    }
+}
+
+.destination__card-rate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination__decore {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+
+    @include md {
+        right: 10% !important;
+        top: 45% !important;
+    }
+}

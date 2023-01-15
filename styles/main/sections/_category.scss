@@ -1,0 +1,82 @@
+/* 
+* CATEGORY SECTION
+*/
+
+.category {
+    position: relative;
+}
+
+.category__pattern {
+    position: absolute;
+    right: 0;
+    top: 10%;
+
+    @include md{
+        top:5% !important;
+    }
+}
+
+.category__pattern-flights {
+    position: absolute;
+    right: 70%;
+    top: 85%;
+    z-index: -1;
+
+    @include md{
+        top: 45% !important;
+    }
+}
+
+.category__sub-title {
+    font-weight: $fw-sm;
+    font-size: 18px;
+}
+
+.category__title {
+    padding: 10px 0 30px 0 !important;
+    font-family: 'Volkhov';
+    font-weight: $fw-m;
+    font-size: 50px;
+    color: $title;
+
+    @include md{
+        font-size: 25px;
+    }
+}
+
+.category__card {
+    width: 70%;
+    border: none !important;
+    border-radius: 25px !important;
+
+    @include md{
+        width: auto;
+        margin-bottom: $space-m;
+    }
+}
+
+.category__card-image {
+    height: 30%;
+    width: 40%;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.category__card-title {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: $open-sans;
+    color: $card-title;
+}
+
+.category__card-text {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: $poppins;
+}
+
+.category__row{
+    @include md {
+        flex-direction: column;
+    }
+}

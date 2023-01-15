@@ -1,0 +1,47 @@
+/* 
+* TESTIMONIALS SECTION
+*/
+
+.testimonials {
+    text-align: left;
+
+    @include md {
+        text-align: center;
+    }
+}
+
+.testimonials__row {
+    @include md {
+        flex-direction: column;
+    }
+}
+
+.testimonials__title {
+    font-family: $volkhov;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    max-width: 500px;
+    color: $title;
+
+    @include md{
+        font-size: 25px;
+    }
+}
+
+.testimonials__sub-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #5E6282;
+    font-family: $poppins;
+}
+
+.logo{
+    @include md{
+        margin-bottom: $space-m;
+    }
+}
+
+.logo__brand{
+    margin: 0 $space-m;
+}

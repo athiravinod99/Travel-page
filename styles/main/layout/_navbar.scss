@@ -1,0 +1,20 @@
+/* 
+* Styles related to Navigation bar in header
+*/
+
+.navbar-item{
+    color: $black !important;
+    font-family: $poppins;
+    margin: 0 20px;
+}
+
+.signup-btn{
+    border: 3px solid black !important;
+    background-color: transparent !important;
+    margin: 0 20px !important;
+}
+
+.dropdown{
+    border: none;
+    color: $black;
+}

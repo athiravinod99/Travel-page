@@ -1,0 +1,12 @@
+/* 
+* Container styling
+*/
+
+.container{
+    padding-top: $space-xl;
+    text-align: center;
+    
+    @include md {
+        padding-top: $space-m;
+    }
+}

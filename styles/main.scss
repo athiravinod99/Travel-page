@@ -1,0 +1,28 @@
+/* 
+* Main file which is only intended to import other files.
+*/
+
+//ABSTRACT
+@import './main/abstracts/mixins';
+@import './main/abstracts/variables';
+
+//BASE
+@import './main/base/base';
+@import './main/base/fonts';
+
+//COMPONENTS
+@import './main/components/buttons';
+@import './main/components/carousel';
+@import './main/components/containers';
+
+//LAYOUT
+@import './main/layout/header';
+@import './main/layout/navbar';
+@import './main/layout/footer';
+
+//SECTIONS
+@import './main/sections/category';
+@import './main/sections/destinations';
+@import './main/sections/book-a-trip';
+@import './main/sections/testimonials';
+@import './main/sections/subscribe';

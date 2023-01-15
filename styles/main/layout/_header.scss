@@ -1,0 +1,105 @@
+/* 
+* Styles related to header section
+*/
+
+.header {
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 0 !important;
+}
+
+.header__content {
+    display: flex;
+    font-family: $open-sans;
+
+    @include md {
+        display: block;
+    }
+}
+
+.header__title {
+    margin: auto;
+    max-width: 500px;
+    text-align: left;
+
+    @include md{
+        max-width: 300px !important;
+    }
+}
+
+.header__text-decoration {
+    background-repeat: no-repeat;
+    color: $black;
+}
+
+.header__sub-title {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: $fw-m;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: $space-s;
+    color: $orange;
+}
+
+.header__main-title {
+    font-family: $volkhov;
+    font-style: normal;
+    font-weight: $fw-m;
+    font-size: 84px;
+    line-height: 89px;
+    letter-spacing: -0.04em;
+    color: $black;
+
+    @include md {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+.header__description {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight:$fw-s;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.header__nav--links {
+    display: flex;
+
+    @include md {
+        display: block;
+    }
+}
+
+.travellor-image {
+    @include md {
+        width: 100%;
+    }
+}
+
+.header__button {
+    width: 170px;
+    height: 60px;
+    font-weight: $fw-s;
+    font-size: 18px;
+    color: $white;
+    margin-top: $space-xxs;
+}
+
+.header__video {
+    display: flex;
+
+    @include md {
+        justify-content: center;
+    }
+}
+
+.video__text {
+    font-weight: $fw-s;
+    font-size: 17px;
+    font-family: $poppins;
+    margin-top: $space-xs;
+}

@@ -1,0 +1,30 @@
+/* 
+* Common Footer
+*/
+
+.footer {
+    font-family: $poppins;
+}
+
+.footer__company-name {
+    font-size: 44px;
+
+    @include md{
+        font-size: 22px;
+    }
+}
+
+.footer__tagline {
+    font-weight: $fw-s;
+    font-size: 13px;
+    line-height: 124.5%;
+}
+
+.footer__list{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer__copyright{
+    text-align: center;
+}
